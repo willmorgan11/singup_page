@@ -44,6 +44,7 @@ class _SignupPageState extends State<SignupPage> {
     _passwordController.dispose();
     _confirmPasswordController.dispose();
     super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
