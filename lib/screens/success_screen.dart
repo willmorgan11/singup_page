@@ -34,7 +34,10 @@ class _SuccessScreenState extends State<SuccessScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('You\'re In!'),
+        title: const Text(
+            'You\'re In!',
+            style: TextStyle(color: Colors.white)
+        ),
         backgroundColor: Colors.purple,
         automaticallyImplyLeading: false, // no back button
       ),
