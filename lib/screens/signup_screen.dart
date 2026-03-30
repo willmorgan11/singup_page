@@ -134,7 +134,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   final emailRegex =
                   RegExp(r'^[\w\.-]+@[\w\.-]+\.\w{2,}$');
                   if (!emailRegex.hasMatch(value)) {
-                    return 'Please enter a valid email address (e.g. example@gmail.com)';
+                    return 'Please enter a valid email address';
                   }
                   return null;
                 },
@@ -250,7 +250,10 @@ class _SignupScreenState extends State<SignupScreen> {
                       ? const CircularProgressIndicator(color: Colors.white)
                       : const Text(
                     'Sign Up',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white
+                    ),
                   ),
                 ),
               ),
